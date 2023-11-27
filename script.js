@@ -40,7 +40,7 @@ function processData(text) {
     for (const day of absences) {
       const formatedDay = day.trim().padStart(2, "0");
       const formatedDate = `${formatedDay}/${month}/${year}`;
-      result += `${fields[0]}\t${fields[1]}\t${formatedDate}\t${formatedDate}\r`;
+      result += `${fields[0]}\t${fields[1]}\t${formatedDate}\t${formatedDate}\r\n`;
     }
 
   }
