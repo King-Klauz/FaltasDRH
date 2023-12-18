@@ -35,10 +35,11 @@ function processData(text) {
   const lines = text.split("\n");
  
   let result = "";
+  const cod = "45"
 
   for (const line of lines) {
     const fields = line.trim().split("\t");
-    const absences = fields[2].split(",");
+    const absences = fields[1].split(",");
     console.log(fields)
     
     for (const day of absences) {
@@ -48,7 +49,7 @@ function processData(text) {
       const formatedDay_discount = day_discount.trim().padStart(2, "0");
       const formatedDate_discount = `${formatedDay_discount}/${month_discount}/${year_discount}`;
 
-      result += `${fields[0]}\t${fields[1]}\t${formatedDate}\t${formatedDate}\t\t${formatedDate_discount}\r\n`;
+      result += `${fields[0]}\t${cod}\t${formatedDate}\t${formatedDate}\t\t${formatedDate_discount}\r\n`;
     }
 
   }
