@@ -6,14 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DRH Tools 🛠️</title>
   <script src="script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" defer></script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <main>
     <h1>Configurações do arquivo.</h1>
+    
     <form class="form">
-
       <div class="conteiner">
         <div>
           <label for="filename">Nome do Arquivo:</label>
@@ -32,8 +34,11 @@
       </div>
       
       <input id="input-file" type="file" required/>
+      <!--<button class="btn" id="reader-btn">ler arquivo</button>-->
       <button class="btn" id="download-btn">Download</button>
+    
     </form>
+      
   </main>
   <p>Desenvolvido por <a href="https://github.com/King-Klauz">Claudio Lopes</a> e <a href="https://github.com/MarcosGTS">Marcos Guilherme</a>.</p>
 </body>
